@@ -56,7 +56,7 @@ Tournament Creator is a simple C# Windows Forms application that allows users to
 
 - **Database:**
   - All sql commands are in `tournamentdb.sql`
-  - DB quickly access Procedures go to `/Code/Procedures.txt`.
+  - To quickly access Procedures go to `/Code/Procedures.txt`.
  
 ## Authors
 - Mikołaj Pałka (me)
