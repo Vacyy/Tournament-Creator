@@ -1,1 +1,1 @@
-All .cs and .Designer.cs code will be in this folder
+## All .cs and .Designer.cs code are in this folder
