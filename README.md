@@ -8,6 +8,10 @@ Tournament Creator is a simple C# Windows Forms application that allows users to
 - .NET Framework 6.0 or newer
 - XAMPP Control Panel
 
+## Viewing Code
+
+   To view all the .cs and .Designer.cs files go to /Code/ folder.
+   
 ## Installation
 
 1. Launch XAMPP Control Panel and start Apache and MySQL modules.
@@ -24,6 +28,8 @@ Tournament Creator is a simple C# Windows Forms application that allows users to
    - Download `Tournament Creator.zip`
    - unzip the folder
    - run `TournamentCreatorWinForms.exe` from `Tournament Creator`
+  
+
      
 ## Usage
 
@@ -49,11 +55,13 @@ Tournament Creator is a simple C# Windows Forms application that allows users to
   - `Designer.cs` files for UI design.
 
 - **Database:**
-  - DB Procedure listed in `Procedures.txt`.
+  - All sql commands are in `tournamentdb.sql`
+  - DB quickly access Procedures go to `/Code/Procedures.txt`.
  
 ## Authors
 - Mikołaj Pałka (me)
 - Kamil Orliński (https://github.com/KamilOrlinski)
 - Kamil Paluszak (https://github.com/Kamiluniuniu)
+- Jagoda Różycka
 
 
