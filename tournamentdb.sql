@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Cze 20, 2024 at 12:29 AM
+-- Generation Time: Cze 24, 2024 at 06:22 PM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -146,31 +146,28 @@ CREATE TABLE `matches` (
 --
 
 INSERT INTO `matches` (`Match_ID`, `Tournament_ID`, `Round`, `Team_ID_1`, `Team_ID_2`, `Winner_ID`, `bracket_id`) VALUES
-(616, 27, 1, 222, 221, NULL, 0),
-(617, 27, 1, 220, 223, NULL, 1),
-(618, 27, 2, NULL, NULL, NULL, 8),
-(619, 8, 1, 81, 75, NULL, 0),
-(620, 8, 1, 80, 79, NULL, 1),
-(621, 8, 1, 71, 76, NULL, 2),
-(622, 8, 1, 73, 85, NULL, 3),
-(623, 8, 1, 77, 82, NULL, 4),
-(624, 8, 1, 72, 74, NULL, 5),
-(625, 8, 1, 86, 84, NULL, 6),
-(626, 8, 1, 83, 78, NULL, 7),
-(627, 8, 2, NULL, NULL, NULL, 8),
-(628, 8, 2, NULL, NULL, NULL, 9),
-(629, 8, 2, NULL, NULL, NULL, 10),
-(630, 8, 2, NULL, NULL, NULL, 11),
-(631, 8, 3, NULL, NULL, NULL, 12),
-(632, 8, 3, NULL, NULL, NULL, 13),
-(633, 8, 4, NULL, NULL, NULL, 14),
 (634, 10, 1, 104, 100, NULL, 0),
 (635, 10, 1, 102, 105, NULL, 1),
 (636, 10, 1, 103, 99, NULL, 2),
 (637, 10, 1, 106, 101, NULL, 3),
 (638, 10, 2, NULL, NULL, NULL, 8),
 (639, 10, 2, NULL, NULL, NULL, 9),
-(640, 10, 3, NULL, NULL, NULL, 12);
+(640, 10, 3, NULL, NULL, NULL, 12),
+(650, 8, 1, 81, 71, 81, 0),
+(651, 8, 1, 73, 86, 86, 1),
+(652, 8, 1, 85, 83, 83, 2),
+(653, 8, 1, 82, 77, 82, 3),
+(654, 8, 1, 80, 76, 76, 4),
+(655, 8, 1, 79, 78, 78, 5),
+(656, 8, 1, 74, 75, 74, 6),
+(657, 8, 1, 72, 84, 72, 7),
+(658, 8, 2, 81, 86, 86, 8),
+(659, 8, 2, 83, 82, 82, 9),
+(660, 8, 2, 76, 78, NULL, 10),
+(661, 8, 2, 74, 72, NULL, 11),
+(662, 8, 3, 86, 82, NULL, 12),
+(663, 8, 3, NULL, NULL, NULL, 13),
+(664, 8, 4, NULL, NULL, NULL, 14);
 
 -- --------------------------------------------------------
 
@@ -205,10 +202,6 @@ INSERT INTO `team` (`Team_ID`, `Name`, `Tournament_ID`) VALUES
 (84, 'Dania', 8),
 (85, 'Turcja', 8),
 (86, 'Austria', 8),
-(95, 'Noby', 9),
-(96, 'Bambiki', 9),
-(97, 'Skibidi Toilety', 9),
-(98, 'Boty', 9),
 (99, 'Team A', 10),
 (100, 'Team B', 10),
 (101, 'Team C', 10),
@@ -216,15 +209,7 @@ INSERT INTO `team` (`Team_ID`, `Name`, `Tournament_ID`) VALUES
 (103, 'Team E', 10),
 (104, 'Team F', 10),
 (105, 'Team G', 10),
-(106, 'Team H', 10),
-(220, 'ale', 27),
-(221, 'fajny', 27),
-(222, 'super', 27),
-(223, 'turniej', 27),
-(224, 'xsdfaf', 28),
-(225, 'dasd', 28),
-(226, 'sds', 28),
-(227, 's', 28);
+(106, 'Team H', 10);
 
 -- --------------------------------------------------------
 
@@ -245,16 +230,7 @@ CREATE TABLE `tournament` (
 
 INSERT INTO `tournament` (`Tournament_ID`, `Name`, `Teams_Counter`, `User_ID`) VALUES
 (8, 'Mistrzostwa Europy 2024 w Siatkówkę', 16, 2),
-(9, 'xdd', 0, 3),
-(10, 'Szkolny turniej w piłkę ręczną', 8, 2),
-(21, 'qwerty', 8, 2),
-(22, 'pokaz', 8, 2),
-(23, 'xdd', 4, 2),
-(24, 'adddd', 4, 2),
-(25, 'asdasda', 4, 2),
-(26, 'dsfgdsfgsd', 4, 2),
-(27, 'asfalt', 4, 2),
-(28, 'xddd', 4, 3);
+(10, 'Szkolny turniej w piłkę ręczną', 8, 2);
 
 -- --------------------------------------------------------
 
@@ -276,7 +252,6 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`user_ID`, `username`, `email`, `password`, `Admin`) VALUES
 (2, 'Vacyy', 'muj@pies.com', 'ecc32f25bb31e943a39339abee1d733b1e05356f928b9ba27a9ab05d177bad51', 0),
-(3, 'xdd', '', '08cf04af4d3b7e903cb15582d02b7fce682f867f04e9b9a82ea719f6e7ecad63', 0),
 (4, 'Kamczito', 'przykladowy-mail@gmail.com', 'd8ed8ca27d83a63df6982905ea53b4613b9d7974edcee06f301cf43d63177f47', 0),
 (9, 'admin', 'admin@admin.com', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 1);
 
@@ -322,7 +297,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `matches`
 --
 ALTER TABLE `matches`
-  MODIFY `Match_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=650;
+  MODIFY `Match_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=665;
 
 --
 -- AUTO_INCREMENT for table `team`
